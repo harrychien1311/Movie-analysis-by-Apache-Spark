@@ -1,4 +1,4 @@
-#!/bin/usr/env bash
+#! /bin/bash
 if [ -d "result" ]
 then
 	echo ""
@@ -9,7 +9,7 @@ else
 	echo "Executing script"
 	echo ""
 fi
-spark-shell -i latest_movies.scala
+spark-submit latest_movies.py
 echo ""
 echo "The latest released movies are:"
 echo ""

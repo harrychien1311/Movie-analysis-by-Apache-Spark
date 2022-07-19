@@ -7,7 +7,7 @@ then
 else
 	echo "Executing script"
 fi
-spark-shell -i Movies_in_each_genre.scala
+spark-submit Movies_in_each_genre.py
 echo ""
 echo ""
 echo "The number of movies in each genre"

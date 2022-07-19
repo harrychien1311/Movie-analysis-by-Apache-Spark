@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#! /bin/bash
 # Check if the directory already exists
 if [ -d "Top-10-CSV" ]
 then
@@ -7,7 +7,7 @@ then
 else
 	echo "No previous existing directory found"
 fi
-spark-shell -i top_10_most_viewed_movies.scala
+spark-submit top_10_most_viewed_movies.py
 echo ""
 echo ""
 echo "Printing The top 10 most viewed movies"

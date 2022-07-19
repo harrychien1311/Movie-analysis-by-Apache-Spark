@@ -7,7 +7,7 @@ then
 else
 	echo "Executing File"
 fi
-spark-shell -i list_of_distinct_genres.scala
+spark-submit list_of_distinct_genres.py
 echo ""
 echo ""
 echo "The list of distinct genres are"
